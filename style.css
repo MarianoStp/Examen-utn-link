@@ -1,23 +1,23 @@
 body{
   background-position: center;;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0; /* Elimina márgenes predeterminados */
+  margin: 0;
   padding: 0;
-  background-color: #FFFFFF; /* Fondo blanco predeterminado */
+  background-color: #FFFFFF;
 }
 
 
 header {
-  background-image: url('./imagenes/fondo.jpg'); /* Ruta a tu imagen */
-  background-size: cover; /* Ajusta la imagen para cubrir todo el área */
-  background-position: center; /* Centra la imagen */
-  background-attachment: fixed; /* Evita que la imagen se repita */
-  height: 100vh; /* Altura del header (100% de la altura de la ventana) */
-  display: flex; /* Flexbox para alinear contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  color: white; /* Color del texto para destacar */
-  text-align: center; /* Centrado de texto */
+  background-image: url('./imagenes/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: white; 
+  text-align: center; 
 }
 
 .Logo{
@@ -31,7 +31,7 @@ header {
 
 nav{
     z-index: 4;
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -40,6 +40,10 @@ nav{
     padding: 20px 40px;
     transition: background-color 2s ease;
     box-sizing: border-box;
+}
+
+.fondo-nav{
+    background-color: white; 
 }
 
 .menu{
@@ -65,16 +69,16 @@ nav{
 
 }
 .item-link:hover{
-  color: #f0a500
+  color: #383636
 }
 
-.titulo-2 {
+.titulo {
   text-align: center;
 }
 
 h1{
   font-weight: 200;
-  font-size: calc(2em + 15px); 
+  font-size: calc(2em + 40px); 
   color: #eeeeee;
   text-shadow: 4px 4px #808080, 6px 6px black;
 }
@@ -141,3 +145,128 @@ h2 {
   width: 60%;
   text-decoration: none;
 }
+
+footer{
+  background-color: #181D31;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo{
+  height: 65px;
+}
+
+/*--------------- Pag. Historia.-------------------*/ 
+
+#header-2{
+  background-image: url( ./imagenes/historia-programacion.jpg);
+  height: 70vh;
+}
+
+.titulo-historia{
+  background: rgba(97, 125, 172, 0.397);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%; 
+}
+
+.cont-historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.carta-hist{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.carta-hist2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.carta-hist2 img{
+  width: 40%;
+  height: auto;
+}
+
+.carta-hist3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 60px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.container video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.barra{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #181D31;
+  margin-bottom: 50px;
+  padding: 0px 15px;
+}
+
+.botones{
+  display: flex;
+  gap: 15px;
+}
+
+.botonesVideo{
+  background: white;
+  border: solid 1px #ccc;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.botonesVideo img{
+  width: 25px;
+  height: auto;
+}
+
+#play{
+  width: 80%;
+}
+#pause{
+  width: 80%;
+}
+#volumen {
+  width: 100px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#showTime{
+  font-size: 14px;
+  color: white;
+  margin-left: auto;
+}
+
