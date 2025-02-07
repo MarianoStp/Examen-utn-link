@@ -270,3 +270,54 @@ footer{
   margin-left: auto;
 }
 
+/*--------------- Pag. Juguemos.-------------------*/ 
+
+#header-3{
+  background-image: url( ./imagenes/img2.jpg);
+  height: 70vh;
+}
+
+.Juego{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  align-items: center;
+  
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: 300px;
+    margin: auto;
+    border: 3px dashed black;
+    display: inline-block;
+    align-items: center;
+    background-color: #808080;
+    text-align: center;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.piezas{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 40px;
+}
+.piece{
+  width: 240px;
+  height: 350px;
+  background-color: #808080;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#reiniciar{
+  display: flex;
+  margin: auto;
+  padding: 20px 60px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #808080;
+}

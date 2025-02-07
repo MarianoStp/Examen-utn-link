@@ -47,3 +47,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
+   /* -Juego- */
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const piezas = document.querySelectorAll('.piece');
+  const boxes = document.querySelectorAll('.box');
+
+  piezas.forEach(pieza => {
+      pieza.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData('text/plain', e.target.id);
+      });
+  });
+
+  boxes.forEach(box => {
+      box.addEventListener('dragover', (e) => {
+          e.preventDefault();
+      });
+
+      box.addEventListener('drop', (e) => {
+          e.preventDefault();
+          const id = e.dataTransfer.getData('text');
+          const pieza = document.getElementById(id);
+          box.appendChild(pieza);
+      });
+  });
+
+  document.getElementById("reiniciar").addEventListener("click", () => {
+      const contenedorPiezas = document.querySelector(".piezas");
+      piezas.forEach(pieza => {
+          contenedorPiezas.appendChild(pieza);
+      });
+  });
+});
+

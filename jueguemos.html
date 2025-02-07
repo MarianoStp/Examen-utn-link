@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/logo.png" >
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto-Final</title>
+</head>
+<body>
+    <nav id="navbar">
+        <a href='/index.html'>
+            <img src="./imagenes/pngegg.png" alt="Logo" class="Logo">
+        </a>
+        <ul class="menu">
+            <li class="item-menu"><a class='item-link' href='/historia.html'>HISTORIA</a></li>
+            <li class="item-menu"><a class='item-link' href='/jueguemos.html'>JUGUEMOS</a></li>
+        </ul>
+    </nav>
+
+    <header id="header-3">
+        <h1 class="titulo-juguemos"> JUGUEMOS UN POCO </h1>
+    </header>
+
+    <main>
+        <h2 class=" juego-titulo"> Armemos el rompecabezas y vemos que imagen es. . . .</h2>
+        <section class="Juego">
+            <div class="contenedor">
+                <div class="box" id="Caja">
+                    <p>Arrastre y Suelte la imagen aqui</p>
+                </div>
+                <div class="box" id="Caja1">
+                    <p>Arrastre y Suelte la imagen aqui</p>
+                </div>
+                <div class="box" id="Caja2">
+                    <p>Arrastre y Suelte la imagen aqui</p>
+                </div>
+                <div class="piezas">
+                    <img src="/imagenes/Rompe3.png" id="pieza1" class="piece" draggable="true">
+                    <img src="/imagenes/Rompe1.png" id="pieza2" class="piece" draggable="true">
+                    <img src="/imagenes/rompe2.png" id="pieza3" class="piece" draggable="true">
+                </div>
+            </div>
+        </section>
+
+        <button id="reiniciar">Reiniciar</button>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
